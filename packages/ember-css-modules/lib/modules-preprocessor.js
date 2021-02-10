@@ -182,6 +182,7 @@ module.exports = class ModulesPreprocessor {
   dependenciesPlugin() {
     let recordDependencies = this.recordDependencies.bind(this);
     let resolve = this.resolvePath.bind(this);
+
     return require('./postcss-module-order-directive')({
       ui: this.owner.ui,
       emitDeprecationWarning: !this.owner.cssModulesOptions._silenceAfterModuleDeprecation,
@@ -194,9 +195,14 @@ module.exports = class ModulesPreprocessor {
   }
 
   rootPathPlugin() {
-    return require('postcss').plugin('root-path-tag', () => (css) => {
-      css.source.input.rootPath = this._modulesTree.inputPaths[0];
-    });
+    return () => {
+      return {
+        postcssPlugin: 'postcss-root-path-tag',
+        Once: (root) => {
+          root.source.input.rootPath = this._modulesTree.inputPaths[0];
+        },
+      };
+    };
   }
 
   resolvePath(importPath, fromFile) {

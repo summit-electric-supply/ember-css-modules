@@ -31,7 +31,8 @@ module.exports = class OutputStylesPreprocessor {
       debug('running postprocess plugins: %o', postprocessPlugins);
 
       concat = new PostCSS(concat, {
-        plugins: postprocessPlugins
+        exclude: ['**/*.map'],
+        plugins: postprocessPlugins,
       });
     }
 
