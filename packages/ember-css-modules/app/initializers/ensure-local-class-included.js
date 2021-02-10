@@ -1,4 +1,4 @@
-import 'ember-css-modules/templates/static-helpers-hack';
+import '@summit-electric-supply/ember-css-modules/templates/static-helpers-hack';
 
 export default {
   initialize() {

@@ -1,5 +1,5 @@
 {
-  "name": "ember-css-modules",
+  "name": "@summit-electric-supply/ember-css-modules",
   "version": "1.3.4",
   "description": "CSS Modules for ambitious applications",
   "scripts": {
@@ -68,9 +68,9 @@
   "license": "MIT",
   "author": "Dan Freeman",
   "dependencies": {
+    "@summit-electric-supply/broccoli-css-modules": "^1.0.0",
     "broccoli-bridge": "^1.0.0",
     "broccoli-concat": "^4.2.4",
-    "broccoli-css-modules": "summit-electric-supply/broccoli-css-modules",
     "broccoli-funnel": "^2.0.2",
     "broccoli-merge-trees": "^4.2.0",
     "broccoli-postcss": "^6.0.0",
@@ -103,5 +103,27 @@
   "volta": {
     "node": "14.15.5",
     "yarn": "1.22.10"
+  },
+  "release-it": {
+    "git": {
+      "changelog": "npx auto-changelog --stdout --template https://gist.githubusercontent.com/atsjj/de6998d6750a8b32778fa3380da24301/raw/66a23990c3324f03aa756e45fed70d46389c7eab/compact.hbs",
+      "requireCleanWorkingDir": true,
+      "requireUpstream": true,
+      "requireCommits": false,
+      "addUntrackedFiles": false,
+      "commit": true,
+      "commitMessage": "${version}",
+      "commitArgs": "--gpg-sign",
+      "tag": true,
+      "tagName": "${version}",
+      "tagAnnotation": "${version}",
+      "tagArgs": "--sign",
+      "push": true,
+      "pushArgs": "--follow-tags",
+      "pushRepo": "origin"
+    },
+    "npm": {
+      "publish": true
+    }
   }
 }

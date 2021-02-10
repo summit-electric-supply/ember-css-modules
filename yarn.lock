@@ -1704,6 +1704,43 @@
   resolved "https://registry.yarnpkg.com/@sinonjs/text-encoding/-/text-encoding-0.7.1.tgz#8da5c6530915653f3a1f38fd5f101d8c3f8079c5"
   integrity sha512-+iTbntw2IZPb/anVDbypzfQa+ay64MW0Zo8aJ8gZPWMMK6/OubMVb6lUPMagqjOPnmtauXnFCACVl3O7ogjeqQ==
 
+"@summit-electric-supply/broccoli-css-modules@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@summit-electric-supply/broccoli-css-modules/-/broccoli-css-modules-1.0.0.tgz#58a1a2ad48b293be9d300318e9252a94b31d0a1b"
+  integrity sha512-Y51B1Uw1Va8Qx3g5W2lqDx0O7DKLRneKwktDjGhVTMTHcxLLlDrOeC/8LuUOuMVkNSUMzSTTFbNSC6Ie2mLbpg==
+  dependencies:
+    broccoli-caching-writer "^3.0.3"
+    ensure-posix-path "^1.1.1"
+    icss-replace-symbols "^1.1.0"
+    mkdirp "^1.0.4"
+    postcss-modules-extract-imports "^3.0.0"
+    postcss-modules-local-by-default "^4.0.0"
+    postcss-modules-scope "^3.0.0"
+    postcss-modules-values "^4.0.0"
+    rsvp "^4.8.5"
+    symlink-or-copy "^1.3.1"
+
+"@summit-electric-supply/ember-css-modules@link:packages/ember-css-modules":
+  version "1.3.4"
+  dependencies:
+    "@summit-electric-supply/broccoli-css-modules" "^1.0.0"
+    broccoli-bridge "^1.0.0"
+    broccoli-concat "^4.2.4"
+    broccoli-funnel "^2.0.2"
+    broccoli-merge-trees "^4.2.0"
+    broccoli-postcss "^6.0.0"
+    calculate-cache-key-for-tree "^2.0.0"
+    debug "^4.3.2"
+    ember-cli-babel "^7.23.1"
+    ember-cli-htmlbars "^5.3.2"
+    ember-cli-version-checker "^5.1.2"
+    ensure-posix-path "^1.1.1"
+    hash-string "^1.0.0"
+    lodash.merge "^4.6.2"
+    postcss "^8.2.5"
+    semver "^7.3.4"
+    toposort "^2.0.2"
+
 "@types/acorn@^4.0.3":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@types/acorn/-/acorn-4.0.5.tgz#e29fdf884695e77be4e99e67d748f5147255752d"
@@ -3691,21 +3728,6 @@ broccoli-config-replace@^1.1.2:
     broccoli-plugin "^1.2.0"
     debug "^2.2.0"
     fs-extra "^0.24.0"
-
-broccoli-css-modules@summit-electric-supply/broccoli-css-modules:
-  version "0.7.0"
-  resolved "https://codeload.github.com/summit-electric-supply/broccoli-css-modules/tar.gz/7b8a16489db69a4569b3d9da86995ae95d712aa7"
-  dependencies:
-    broccoli-caching-writer "^3.0.3"
-    ensure-posix-path "^1.1.1"
-    icss-replace-symbols "^1.1.0"
-    mkdirp "^1.0.4"
-    postcss-modules-extract-imports "^3.0.0"
-    postcss-modules-local-by-default "^4.0.0"
-    postcss-modules-scope "^3.0.0"
-    postcss-modules-values "^4.0.0"
-    rsvp "^4.8.5"
-    symlink-or-copy "^1.3.1"
 
 broccoli-debug@^0.6.4, broccoli-debug@^0.6.5:
   version "0.6.5"
@@ -6331,27 +6353,6 @@ ember-compatibility-helpers@^1.1.1, ember-compatibility-helpers@^1.1.2, ember-co
     babel-plugin-debug-macros "^0.2.0"
     ember-cli-version-checker "^5.1.1"
     semver "^5.4.1"
-
-"ember-css-modules@link:packages/ember-css-modules":
-  version "1.3.4"
-  dependencies:
-    broccoli-bridge "^1.0.0"
-    broccoli-concat "^4.2.4"
-    broccoli-css-modules summit-electric-supply/broccoli-css-modules
-    broccoli-funnel "^2.0.2"
-    broccoli-merge-trees "^4.2.0"
-    broccoli-postcss "^6.0.0"
-    calculate-cache-key-for-tree "^2.0.0"
-    debug "^4.3.2"
-    ember-cli-babel "^7.23.1"
-    ember-cli-htmlbars "^5.3.2"
-    ember-cli-version-checker "^5.1.2"
-    ensure-posix-path "^1.1.1"
-    hash-string "^1.0.0"
-    lodash.merge "^4.6.2"
-    postcss "^8.2.5"
-    semver "^7.3.4"
-    toposort "^2.0.2"
 
 ember-data@~3.13.0:
   version "3.13.3"

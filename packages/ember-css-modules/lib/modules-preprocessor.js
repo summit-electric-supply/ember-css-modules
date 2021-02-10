@@ -63,7 +63,7 @@ module.exports = class ModulesPreprocessor {
         parentName: ownerName,
       });
 
-      let modulesTree = new (require('broccoli-css-modules'))(modulesSources, {
+      let modulesTree = new (require('@summit-electric-supply/broccoli-css-modules'))(modulesSources, {
         extension: this.owner.getFileExtension(),
         plugins: this.getPostcssPlugins(),
         enableSourceMaps: this.owner.enableSourceMaps(),

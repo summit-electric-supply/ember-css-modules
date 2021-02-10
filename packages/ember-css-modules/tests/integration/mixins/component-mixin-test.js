@@ -2,7 +2,7 @@ import { run } from '@ember/runloop';
 import Component from '@ember/component';
 import hbs from 'htmlbars-inline-precompile';
 
-import ComponentMixin from 'ember-css-modules/mixins/component-mixin';
+import ComponentMixin from '@summit-electric-supply/ember-css-modules/mixins/component-mixin';
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 

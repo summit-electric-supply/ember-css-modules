@@ -1,1 +1,1 @@
-export { default, localClass } from 'ember-css-modules/helpers/local-class';
+export { default, localClass } from '@summit-electric-supply/ember-css-modules/helpers/local-class';

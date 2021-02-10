@@ -4,7 +4,7 @@ import { layout, classNames } from '@ember-decorators/component';
 import { computed as nativeComputed } from '@ember/object';
 import setupStyles from '../helpers/render-with-styles';
 
-import { localClassName, localClassNames } from 'ember-css-modules';
+import { localClassName, localClassNames } from '@summit-electric-supply/ember-css-modules';
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 
