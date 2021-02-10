@@ -6347,7 +6347,6 @@ ember-compatibility-helpers@^1.1.1, ember-compatibility-helpers@^1.1.2, ember-co
     ember-cli-htmlbars "^5.3.2"
     ember-cli-version-checker "^5.1.2"
     ensure-posix-path "^1.1.1"
-    fast-sourcemap-concat "^2.1.0"
     hash-string "^1.0.0"
     lodash.merge "^4.6.2"
     postcss "^8.2.5"
