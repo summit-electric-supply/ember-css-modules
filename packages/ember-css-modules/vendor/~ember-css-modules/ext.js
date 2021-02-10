@@ -1,2 +1,2 @@
 /* global require */
-require('ember-css-modules/extensions');
+require('@summit-electric-supply/ember-css-modules/extensions');
