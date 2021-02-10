@@ -1,6 +1,6 @@
 {
   "name": "@summit-electric-supply/ember-css-modules",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "CSS Modules for ambitious applications",
   "scripts": {
     "build": "ember build",
