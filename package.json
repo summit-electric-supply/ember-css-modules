@@ -9,5 +9,9 @@
     "test-packages/octane-addon-with-module-name",
     "test-packages/plugin-addon",
     "test-packages/sass-app"
-  ]
+  ],
+  "volta": {
+    "node": "14.15.5",
+    "yarn": "1.22.10"
+  }
 }
